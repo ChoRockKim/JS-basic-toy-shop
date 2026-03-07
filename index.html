@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>집꾸미기 스토어</title>
+        <link href = "main.css" rel="stylesheet">
+    </head>
+    <body>
+        <!--j쿼리 -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        
+        <div class="banner">
+            <div class="header">
+                <p class="title">집꾸미기</p>
+            </div>
+            <div class="menu">
+                <p>Home</p>
+            </div>
+            <div class="menu half">
+                <p>스토어</p>
+            </div>
+            <div class="menu half">
+                <p>시공견적</p>
+            </div>
+            
+        </div>
+        
+        <div class="search-container">
+                <input type="text" placeholder="검색어입력" id="search">
+        </div>
+        
+        <div class="body">
+            <div class="item-container">
+                <div class="item show" draggable="true">
+                </div>
+                <div class="item show" draggable="true"></div>
+                <div class="item show" draggable="true"></div>
+                <div class="item show" draggable="true"></div>
+            </div>
+            
+            <div class="cart-container">
+               <div class="cart-title">장바구니</div>
+                <div class="drag-section">
+                    <span>여기로 드래그</span>
+                </div>
+            </div>
+            
+            <div class="result-container">
+                <div class="totalPrice">최종가격</div>
+                <div class="price">합계<span class="priceInformation"></span></div>
+                <button class="buy">구매하기</button>
+                
+            </div>
+            
+            <div class="modal-screen dark-bg">
+               <div class="modal-container">
+                   <div style="padding-top: 30px; padding-left: 30px">성함</div>
+                   <input type="text" class="name">
+                   <div style="margin-top: 20px; padding-left: 30px">연락처</div>
+                   <input type="tel" class="telephone">
+                   <div><button class="complete">입력완료</button>
+                       <button class="quit">닫기</button>
+                   </div>
+               </div>
+                
+            </div>
+            
+            <canvas id="canvas" width="350" height="350"></canvas>
+            
+        </div>
+        
+        
+        
+        
+    <script src="main.js"></script>
+
+    </body>
+</html>
